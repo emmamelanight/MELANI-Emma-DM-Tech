@@ -1,11 +1,11 @@
 //création de la fonction
-function reverse(texte) {
-	let splitTexte = texte.split(''); // Converti texte en tableau
-	console.log('splitTexte = ', splitTexte);
-	let reverseTableau = splitTexte.reverse();
-	console.log('reverseTableau = ', reverseTableau);
-	let newTexte = reverseTableau.join(''); // Join est l'inverse de split
-	return newTexte;
+function reverse(str) {
+    let newStr = '';
+        for (let i = str.length - 1; i >= 0; i--) {
+            newStr += str[i];
+        }
+        return newStr;
+
 }
 
 console.log('reverse', reverse('Bonjour toto'));
